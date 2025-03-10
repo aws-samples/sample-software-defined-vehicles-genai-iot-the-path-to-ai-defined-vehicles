@@ -1,0 +1,23 @@
+---
+RecipeFormatVersion: "2020-01-25"
+ComponentName: "com.amazon.SlmUserGuide"
+ComponentVersion: "1.0.2"
+ComponentDescription: "This is a component that provides Small Language Model based car user guide chat application"
+ComponentPublisher: "[your name] ([your email])"
+ComponentConfiguration:
+  DefaultConfiguration:
+    PORT: '8000'
+Manifests:
+- Platform:
+    os: all
+  Artifacts:
+  - URI: s3://[insert-bucket-name-here]/com.amazon.SlmUserGuide/1.0.2/com.amazon.SlmUserGuide.zip
+    Unarchive: ZIP
+  Lifecycle:
+    Install:
+      Script: bash {artifacts:decompressedPath}/com.amazon.SlmUserGuide/install.sh
+        {artifacts:decompressedPath}/com.amazon.SlmUserGuide/requirements.txt
+      Timeout: 1800
+    Run:
+      Script: . {work:path}/venv/bin/activate && python3 -u {artifacts:decompressedPath}/com.amazon.SlmUserGuide/server.py
+        {configuration:/PORT} {artifacts:decompressedPath}/com.amazon.SlmUserGuide/model/q4_K_M.bin

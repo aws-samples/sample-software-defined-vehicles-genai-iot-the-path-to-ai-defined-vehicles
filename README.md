@@ -1,11 +1,6 @@
-## My Project
+# Software-defined Vehicles, GenAI, IoT - The Path to AI-Defined Vehicles
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository has code examples for an in-vehicle user guide Gen AI application. For a chat based Gen AI application example, please see the README located in [this directory](/vehicle-user-guide-chat). We will add more examples such as voice support and futher optimizations. 
 
 ## Security
 

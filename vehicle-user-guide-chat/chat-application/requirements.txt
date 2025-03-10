@@ -1,0 +1,5 @@
+langchain
+langchain-community
+llama-cpp-python -C cmake.args="-DLLAVA_BUILD=off"
+flask
+requests

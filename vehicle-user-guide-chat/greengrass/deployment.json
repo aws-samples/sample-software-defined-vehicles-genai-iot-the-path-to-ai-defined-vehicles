@@ -1,0 +1,9 @@
+{
+  "targetArn": "[insert arn of the device to deploy to]",
+  "deploymentName": "slm-ug",
+  "components": {
+    "com.amazon.SlmUserGuide": {
+      "componentVersion": "1.0.2"
+    }
+  }
+}
