@@ -1,4 +1,4 @@
-transformers==4.45.1
+transformers==4.48.0
 peft==0.10.0
 accelerate==0.34.2
 evaluate==0.4.1
