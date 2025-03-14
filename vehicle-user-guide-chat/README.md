@@ -1,5 +1,5 @@
 # Vehicle User Guide Chat Application
-In this example we will go through the steps required to fine-tune a LLM on AWS using SageMaker, optimize it for size targeting edge use case, develop a chat application for a GenAI based vehicle user guide, and deploy to a physical device using AWS IoT Greengrass.
+In this example we will go through the steps required to fine-tune a LLM on AWS using SageMaker, optimize it for size targeting edge use case, develop a chat application for a GenAI based vehicle user guide, and deploy to a physical device using AWS IoT Greengrass. Please read the corresponding blog located [here](https://aws.amazon.com/blogs/industries/software-defined-vehicles-genai-iot-the-path-to-ai-defined-vehicles/)
 ## Running the notebook
 You can run the notebook located in the [notebook directory](/vehicle-user-guide-chat/notebook) of this repository using Amazon SageMaker Studio.  
 The notebook uses the @remote decorator approach. For additional information on using @remote decorator, take a look at the AWS Blog [Fine-tune Falcon 7B and other LLMs on Amazon SageMaker with @remote decorator](https://aws.amazon.com/blogs/machine-learning/fine-tune-falcon-7b-and-other-llms-on-amazon-sagemaker-with-remote-decorator/).
