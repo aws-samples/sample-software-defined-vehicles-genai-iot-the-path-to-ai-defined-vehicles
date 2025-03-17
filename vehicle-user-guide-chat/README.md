@@ -48,7 +48,7 @@ sudo apt install git
 Install the required python packages:\
 pip install -r requirements.txt
 
-Run the server.py Flash application as follows, where the first parameter is the port and the second parameter is the path to the quantized model:\
+Run the server.py Flask application as follows, where the first parameter is the port and the second parameter is the path to the quantized model:\
 python3 server.py 8000 ./model/q4_K_M.bin
 
 Launch another ssh session to the EC2 instance - this is to run the client application. Activate the python virtual environment as described above. 
