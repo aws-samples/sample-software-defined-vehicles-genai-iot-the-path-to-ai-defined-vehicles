@@ -4,6 +4,6 @@ accelerate==0.34.2
 evaluate==0.4.1
 safetensors>=0.4.3
 cloudpickle==2.2.1
-sagemaker==2.232.2
+sagemaker==2.237.3
 tokenizers>=0.19.1
 py7zr
